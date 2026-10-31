@@ -159,7 +159,7 @@ jobs:
           enable-cache: true
 
       - name: Download native build
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: native-cu131-linux
           path: native-wheel
@@ -186,7 +186,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Download packaged wheels
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           pattern: wheels-cu131-linux-py*
           merge-multiple: true
