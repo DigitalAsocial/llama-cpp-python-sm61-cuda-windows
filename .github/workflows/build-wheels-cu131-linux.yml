@@ -48,7 +48,7 @@ jobs:
             ninja-build
 
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           submodules: recursive
 
@@ -149,7 +149,7 @@ jobs:
         shell: bash
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install uv and Python ${{ matrix.pyver }}
         uses: astral-sh/setup-uv@v7
