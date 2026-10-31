@@ -38,7 +38,7 @@ jobs:
           msbuild-architecture: x64
 
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           submodules: recursive
 
@@ -175,7 +175,7 @@ jobs:
         shell: pwsh
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install uv and Python ${{ matrix.pyver }}
         uses: astral-sh/setup-uv@v7
