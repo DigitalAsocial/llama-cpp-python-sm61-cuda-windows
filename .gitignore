@@ -218,3 +218,7 @@ docs/_build/
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+
+# Local build and wheel inspection
+.venv-build/
+wheel_check/
