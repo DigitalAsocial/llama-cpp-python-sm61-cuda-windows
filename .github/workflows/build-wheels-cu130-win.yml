@@ -210,7 +210,7 @@ jobs:
         run: python .github/scripts/package_backend_wheel.py --write-manifest --seed-dir dist --backend cuda --backend-version ${{ matrix.cuda }}
 
       - name: Share native build
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: native-cu130-win
           path: |
@@ -257,7 +257,7 @@ jobs:
         run: python .github/scripts/package_backend_wheel.py --verify
 
       - name: Upload wheel
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: wheels-cu130-win-py${{ matrix.pyver }}
           path: dist/*.whl

@@ -60,7 +60,7 @@ jobs:
           output-dir: wheelhouse2
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: wheels-metal-arm64
           path: ./wheelhouse2/*.whl
